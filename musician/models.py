@@ -1,6 +1,5 @@
 from django.core.validators import MinValueValidator
 from django.db import models
-from rest_framework.exceptions import ValidationError
 
 
 class Musician(models.Model):
@@ -17,4 +16,4 @@ class Musician(models.Model):
         return False
 
     def __str__(self):
-        return f'{self.first_name} {self.last_name}'
+        return f"{self.first_name} {self.last_name}"
